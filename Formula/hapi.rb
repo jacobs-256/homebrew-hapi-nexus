@@ -22,7 +22,15 @@ class Hapi < Formula
   end
 
   def install
-    bin.install Dir["*/hapi"].first => "hapi"
+    hapi_binary = if File.exist?("hapi")
+      "hapi"
+    else
+      Dir["*/hapi"].first
+    end
+
+    odie "hapi binary not found in release archive" if hapi_binary.nil?
+
+    bin.install hapi_binary => "hapi"
   end
 
   def caveats
