@@ -4,16 +4,16 @@
 class Hapi < Formula
   desc "Private multi-user AI coding agent control CLI"
   homepage "https://github.com/jacobs-256/hapi-nexus"
-  version "1.4.0"
+  version "2.0.0"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jacobs-256/hapi-nexus/releases/download/v1.4.0-260817/hapi-nexus-v1.4.0-260817-hapi-darwin-arm64.tar.gz"
-      sha256 "fc29ebe9823ff91e10740ffee8f752ac4f3bbc0ee47f0b7f4f86641bc5dfb5ab"
+      url "https://github.com/jacobs-256/hapi-nexus/releases/download/v2.0.0-260819/hapi-nexus-v2.0.0-260819-hapi-darwin-arm64.tar.gz"
+      sha256 "b08a1acfbae73d214e01cfc1259cd6edf41975c222ea6159f2360bf2f7ca7863"
     else
-      url "https://github.com/jacobs-256/hapi-nexus/releases/download/v1.4.0-260817/hapi-nexus-v1.4.0-260817-hapi-darwin-amd64.tar.gz"
-      sha256 "dc39cfb12c8b0d70a09a70ea8e0d3ed694a64c5df9ee9669f029cb78387973d2"
+      url "https://github.com/jacobs-256/hapi-nexus/releases/download/v2.0.0-260819/hapi-nexus-v2.0.0-260819-hapi-darwin-amd64.tar.gz"
+      sha256 "bf17666d96f174befba8c8ca24fd4b1af7174f14d74a2dc1e5682c94424c25f2"
     end
   end
 
